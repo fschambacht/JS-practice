@@ -7,7 +7,45 @@
     <title>Geometric Figures</title>
 </head>
 <body>
-    <h1>Geometric Figures</h1>
+    <header>
+        <h1>Geometric Figures</h1>
+        <p>Calculate area and perimeter of circle, triangle and square</p>
+    </header>
+    <main>
+        <section>
+            <h2>square</h2>
+            <form action="sideSquare">
+                <label for="">Input one side of your square: </label>
+                <input id="sideSquare" type="number">
+                <button type="button" onclick="perimeterSquare()">Perimeter Calculate</button>
+                <button type="button" onclick="areaSquare()">Area Calculate</button>
+            </form>
+        </section>
+        <section>
+            <h2>Triangle</h2>
+            <form action="sideOne sideTwo sideThree">
+                <label for="">Input first side of your triangle: </label>
+                <input id="sideOne" type="number">
+                <label for="">Input second side of your triangle: </label>
+                <input id="sideTwo" type="number">
+                <label for="">Input third side of your triangle: </label>
+                <input id="sideThree" type="number">
+                <button type="button" onclick="perimeterTriangle()">Perimeter Calculate</button>
+                <button type="button" onclick="areaTriangle()">Area Calculate</button>
+            </form>
+        </section>
+        <section>
+            <h2>Circle</h2>
+            <form action="radioCircle">
+                <label for="">Input the radio of your circle: </label>
+                <input id="radioCircle" type="number">
+                <button type="button" onclick="perimeterCircle()">Perimeter Calculate</button>
+                <button type="button" onclick="areaCircle()">Area Calculate</button>
+            </form>
+        </section>
+        
+    </main>
+    
     <script src="./index.js"></script>
 </body>
 </html>
