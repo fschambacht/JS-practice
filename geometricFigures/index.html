@@ -5,47 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometric Figures</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Geometric Figures</h1>
-        <p>Calculate area and perimeter of circle, triangle and square</p>
+    <header class="header">
+        <h1 class="header__title">Geometric Figures</h1>
+        <p class="header__p">Calculate area and perimeter of circle, triangle and square</p>
     </header>
-    <main>
-        <section>
-            <h2>square</h2>
-            <form action="sideSquare">
-                <label for="">Input one side of your square: </label>
-                <input id="sideSquare" type="number">
-                <button type="button" onclick="perimeterSquare()">Perimeter Calculate</button>
-                <button type="button" onclick="areaSquare()">Area Calculate</button>
+    <main class="main">
+        <section class="geometricFigure-container geometricFigure-container--square">
+            <h2 class="square__title">square</h2>
+            <form class="form-container form-container--square" action="sideSquare">
+                <label class="square__label" for="">Input one side of your square: </label>
+                <input class="input-form input-form--square" id="sideSquare" type="number">
+                <p class="result-form result-form--square" id="result-square" ></p>
+                <button class="button-form button-form--perimeter button-form--square" type="button" onclick="perimeterSquare()">Perimeter Calculate</button>
+                <button class="button-form button-form--area button-form--square" type="button" onclick="areaSquare()">Area Calculate</button>
             </form>
         </section>
-        <section>
+        <section class="geometricFigure-container geometricFigure-container--triangle">
             <h2>Triangle</h2>
-            <form action="sideOne sideTwo sideThree">
+            <form class="form-container form-container--triangle" action="sideOne sideTwo sideThree">
                 <label for="">Input first side of your triangle: </label>
-                <input id="sideOne" type="number">
+                <input class="input-form input-form--triangle" id="sideOne" type="number">
                 <label for="">Input second side of your triangle: </label>
-                <input id="sideTwo" type="number">
+                <input class="input-form input-form--triangle" id="sideTwo" type="number">
                 <label for="">Input third side of your triangle: </label>
-                <input id="sideThree" type="number">
-                <button type="button" onclick="perimeterTriangle()">Perimeter Calculate</button>
-                <button type="button" onclick="areaTriangle()">Area Calculate</button>
+                <input class="input-form input-form--triangle" id="sideThree" type="number">
+                <p class="result-form result-form--triangle" id="result-triangle" ></p>
+                <button class="button-form button-form--perimeter button-form--triangle" type="button" onclick="perimeterTriangle()">Perimeter Calculate</button>
+                <button class="button-form button-form--area button-form--triangle" type="button" onclick="areaTriangle()">Area Calculate</button>
             </form>
         </section>
-        <section>
+        <section class="geometricFigure-container geometricFigure-container--circle">
             <h2>Circle</h2>
-            <form action="radioCircle">
+            <form class="form-container form-container--circle" action="radioCircle">
                 <label for="">Input the radio of your circle: </label>
-                <input id="radioCircle" type="number">
-                <button type="button" onclick="perimeterCircle()">Perimeter Calculate</button>
-                <button type="button" onclick="areaCircle()">Area Calculate</button>
+                <input class="input-form input-form--circle" id="radioCircle" type="number">
+                <p class="result-form result-form--circle" id="result-circle" ></p>
+                <button class="button-form button-form--perimeter button-form--circle" type="button" onclick="perimeterCircle()">Perimeter Calculate</button>
+                <button class="button-form button-form--area button-form--circle" type="button" onclick="areaCircle()">Area Calculate</button>
             </form>
         </section>
-        
-    </main>
-    
-    <script src="./index.js"></script>
+    </main>    
+<script src="./index.js"></script>
 </body>
 </html>
