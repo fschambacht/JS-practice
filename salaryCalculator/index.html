@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>salary calculator of US</h1>
+        <p>In this program you can calculate the salary of US people</p>
+    </header>
+    <main>
+        <section class="randomData-container">
+            <h2 class="randomData__title">Random Data: </h2>
+            <p class="randomData" id="randomData"></p>
+            <button class="salary-button" type="button" onclick="medianSalary()">Calculate Median Salary</button>
+            <button class="salary-button salary-button--top10" type="button" onclick="medianSalaryTop10()">Calculate Median Salary Top 10</button>
+            <p class="output" id="output"></p>
+        </section>
+    </main>
+<script src="./index.js"></script>
+</body>
+</html>
